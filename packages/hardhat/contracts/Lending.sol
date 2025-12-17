@@ -72,6 +72,8 @@ contract Lending is Ownable {
             revert Lending__TransferFailed();
         }
 
+        _validatePosition(msg.sender); 
+
         emit CollateralWithdrawn(msg.sender, amount, i_cornDEX.currentPrice());
     }
     /**
