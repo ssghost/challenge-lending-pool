@@ -1294,7 +1294,7 @@ const deployedContracts = {
   },
   11155111: {
     Corn: {
-      address: "0x990dfb41d15F9C193fa68708650135f97dce9303",
+      address: "0x42e037500060175fe06c03d6CF938700Ab4B8BB3",
       abi: [
         {
           inputs: [],
@@ -1732,10 +1732,10 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 9858839,
+      deployedOnBlock: 9859274,
     },
     CornDEX: {
-      address: "0x7945D4cBfDeEDBfcd90559b1CC8515113b415B94",
+      address: "0x1181C702efca27dAE02b406f4Cabd16A385E6039",
       abi: [
         {
           inputs: [
@@ -2040,10 +2040,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 9858840,
+      deployedOnBlock: 9859275,
     },
     Lending: {
-      address: "0xFEe66bb66A3BDdafb9b4913040c7BBCBEF8Aa53e",
+      address: "0x800D35B74cFC0b84d7B249F90FF7af14f338719A",
       abi: [
         {
           inputs: [
@@ -2509,7 +2509,7 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 9858841,
+      deployedOnBlock: 9859276,
     },
   },
 } as const;
