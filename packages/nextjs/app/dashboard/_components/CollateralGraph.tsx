@@ -7,8 +7,9 @@ import { useScaffoldEventHistory } from "~~/hooks/scaffold-eth";
 import { collateralRatio, initialPrice } from "~~/utils/constant";
 
 const getPriceFromEvent = (blockNumber: bigint, priceEvents: any) => {
+  if (!priceEvents || priceEvents.length === 0) return 0;
   for (let i = priceEvents.length - 1; i >= 0; i--) {
-    if (priceEvents[i].blockNumber <= blockNumber) {
+    if (priceEvents[i] && priceEvents[i].blockNumber <= blockNumber) {
       return priceEvents[i].args.price;
     }
   }
