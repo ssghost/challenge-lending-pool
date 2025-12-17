@@ -104,6 +104,10 @@ contract Lending is Ownable {
      * @return bool True if the position is liquidatable, false otherwise
      */
     function isLiquidatable(address user) public view returns (bool) {
+        uint256 totalDebt = s_userBorrowed[user]; 
+        if (totalDebt == 0) {
+            return false;
+        }
         uint256 positionRatio = _calculatePositionRatio(user); 
         return (positionRatio * 100) < COLLATERAL_RATIO * 1e18;
     }
